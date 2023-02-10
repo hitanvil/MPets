@@ -8,6 +8,6 @@ The processing includes physical layer (L1) processing and upper layer (L2+) pro
 
 More challenging, the processing load is very high that one core of GPCPU cannot handle it. It is necessary to distribute those workload to multiple cores on CPU so that they can run in [parallel](https://en.wikipedia.org/wiki/Parallel_computing) to reduce processing latency and meet realtime requirement.
 
-# Design Consideration and Methodologies
+# Design Consideration and Methodology
 As described above, the workload is very high and new workload comes in a periodic way, so most of time CPU is occupied by the workload. The classic interrupt-based design methodology is not suitable now. A run-to-complete, polling-based design methodology is adopted here. The same design methodology is already used in well-known [DPDK](https://www.dpdk.org/) for packet processing.
 
