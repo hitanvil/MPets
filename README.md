@@ -1,2 +1,2 @@
-# MPets
-Multi-core Periodic Event Task Scheduler
+# Overview
+MPets is a scheduler for periodic events on multi-core system.
